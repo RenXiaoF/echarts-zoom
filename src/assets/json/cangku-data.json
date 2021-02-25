@@ -1,0 +1,214 @@
+{
+  "module1": {
+    "title": "人员工积分",
+    "dataList": [
+      { "value": 335, "name": "研发" },
+      { "value": 310, "name": "技术" },
+      { "value": 234, "name": "售前" },
+      { "value": 135, "name": "营销" },
+      { "value": 1548, "name": "实施" },
+      { "value": 1548, "name": "销售" },
+      { "value": 1548, "name": "职能" }
+    ]
+  },
+  "module2": {
+    "title": "目标效率",
+    "dataList":[
+      { "value": 335, "name": "本科" },
+      { "value": 310, "name": "硕士" },
+      { "value": 234, "name": "大专" },
+      { "value": 135, "name": "博士" },
+      { "value": 1548, "name": "985" },
+      { "value": 1548, "name": "211" },
+      { "value": 1548, "name": "其他" }
+    ]  
+  },
+  "module3": {
+    "title": "绩优绩差人员比例",
+    "lineDataList1": [820, 932, 901, 934, 1290, 1330, 1320, 400, 600, 800, 600, 100],
+    "lineDataList2": [400, 600, 600, 255, 1000, 1330, 500, 1000, 800, 600, 300, 700]
+  },
+  "module4": {
+    "fenbuMapTableData": [
+      { "total": 27205, "precent": "2.3%" },
+      { "total": 21, "precent": "3%" },
+      { "total": 57, "precent": "1.2%" }
+    ],
+    "mapData": {
+      "dataList1":[
+        { "name": "北京", "value": 666 },
+        { "name": "天津", "value": 666 },
+        { "name": "上海", "value": 666 },
+        { "name": "重庆", "value": 666 },
+        { "name": "河北", "value": 666 },
+        { "name": "河南", "value": 666 },
+        { "name": "云南", "value": 666 },
+        { "name": "辽宁", "value": 666 },
+        { "name": "黑龙江", "value": 666 },
+        { "name": "湖南", "value": 666 },
+        { "name": "安徽", "value": 666 },
+        { "name": "山东", "value": 666 },
+        { "name": "新疆", "value": 666 },
+        { "name": "江苏", "value": 666 },
+        { "name": "浙江", "value": 666 },
+        { "name": "江西", "value": 666 },
+        { "name": "湖北", "value": 666 },
+        { "name": "广西", "value": 666 },
+        { "name": "甘肃", "value": 666 },
+        { "name": "山西", "value": 666 },
+        { "name": "内蒙古", "value": 666 },
+        { "name": "陕西", "value": 666 },
+        { "name": "吉林", "value": 666 },
+        { "name": "福建", "value": 666 },
+        { "name": "贵州", "value": 666 },
+        { "name": "广东", "value": 666 },
+        { "name": "青海", "value": 666 },
+        { "name": "西藏", "value": 666 },
+        { "name": "四川", "value": 666 },
+        { "name": "宁夏", "value": 666 },
+        { "name": "海南", "value": 666 },
+        { "name": "台湾", "value": 666 },
+        { "name": "香港", "value": 666 },
+        { "name": "澳门", "value": 666 }
+      ],
+      "dataList2":[
+        { "name": "北京", "value": 777 },
+        { "name": "天津", "value": 777 },
+        { "name": "上海", "value": 777 },
+        { "name": "重庆", "value": 777 },
+        { "name": "河北", "value": 777 },
+        { "name": "安徽", "value": 777 },
+        { "name": "新疆", "value": 777 },
+        { "name": "浙江", "value": 777 },
+        { "name": "江西", "value": 777 },
+        { "name": "山西", "value": 777 },
+        { "name": "内蒙古", "value": 777 },
+        { "name": "吉林", "value": 777 },
+        { "name": "福建", "value": 777 },
+        { "name": "广东", "value": 777 },
+        { "name": "西藏", "value": 777 },
+        { "name": "四川", "value": 777 },
+        { "name": "宁夏", "value": 777 },
+        { "name": "香港", "value": 777 },
+        { "name": "澳门", "value": 777 }
+      ],
+      "dataList3":[
+        { "name": "北京", "value": 555 },
+        { "name": "天津", "value": 555 },
+        { "name": "上海", "value": 555 },
+        { "name": "广东", "value": 555 },
+        { "name": "台湾", "value": 555 },
+        { "name": "香港", "value": 555 },
+        { "name": "澳门", "value": 555 }
+      ]
+    }
+  },
+  "module5": {
+    "title": "全球组织机构人员分布",
+    "dataList": [
+      { "name": "云数据中心", "value": 70 },
+      { "name": "云服务中心", "value": 300 },
+      { "name": "软件集团", "value": 3400 },
+      { "name": "浪潮国际", "value": 1100 },
+      { "name": "中国区", "value": 500 },
+      { "name": "海外单位", "value": 200 }
+    ]
+  },
+  "module6": {
+    "title": "实际效率",
+    "dataList": [
+      { "name": "入职", "value": 70 },
+      { "name": "离职", "value": 60 }
+    ]
+  },
+  "module7": {
+    "title": "累计出勤",
+    "dataList":[
+      { "value": 335, "name": "28以下" },
+      { "value": 310, "name": "28-35" },
+      { "value": 234, "name": "35-45" },
+      { "value": 135, "name": "44以上" },
+      { "value": 1548, "name": "55以上" }
+    ]
+  },
+  "module8": {
+    "title": "累计产量",
+    "dataList":[
+      { "value": 335, "name": "云数据中心" },
+      { "value": 310, "name": "云服务集团" },
+      { "value": 234, "name": "浪湘集团" },
+      { "value": 135, "name": "中国区" },
+      { "value": 1548, "name": "其他" }
+    ]
+  },
+  "module9": {
+    "title": "生产合格率分析",
+    "dataList": [
+      {
+        "name": "当前",
+        "list": [20, 40, 60, 80, 100, 20, 40]
+      },
+      {
+        "name": "去年周期(%)",
+        "list": [10, 30, 50, 70, 90, 10, 30]
+      }
+    ]
+  },
+  "module10": {
+    "title": "采购预算与实际分析",
+    "dataList": [
+      {
+        "name": "计划",
+        "list": [1200, 500, 2000, 1100, 1300, 700, 2500]
+      },
+      {
+        "name": "实际(万吨)",
+        "list": [2000, 1600, 2100, 2300, 1800, 1700, 1900]
+      }
+    ]
+  },
+  "module11": {
+    "title": "采购量对比分析",
+    "typeList": ["矿石", "溶剂", "古田燃料", "备燃料", "合金", "燃料"],
+    "dataList": [
+      {
+        "name": "去年周期",
+        "list": [20, 40, 60, 80, 100, 20, 40]
+      },
+      {
+        "name": "当期(万吨)",
+        "list": [10, 30, 50, 70, 90, 10, 30]
+      }
+    ]
+  },
+  "module12": {
+    "yuancailiaoData" : {
+      "title": "原材料状态表",
+      "yuancailiaoList": ["76212码", "112821码", "252181码", "17350码"],
+      "kuanshuList": ["22款", "35款", "67款", "7款"]
+    },
+    "zhipinData": {
+      "title": "在制品状态表",
+      "zhipinList": [
+        { "name": "裁衣", "total": 22591 },
+        { "name": "车缝", "total": 6785 },
+        { "name": "包装", "total": 11476 },
+        { "name": "仓库", "total": 41267 }
+      ]
+    }
+  },
+  "module13": {
+    "title": "货存预警",
+    "avg": 19.79,
+    "today": 18.99
+  },
+  "module14": {
+    "title": "存货结构",
+    "dataList": [
+      { "name": "原材料", "value": 10 },
+      { "name": "产成品", "value": 20 },
+      { "name": "在制品", "value": 30 },
+      { "name": "资料备份", "value": 25 }
+    ]
+  }
+}

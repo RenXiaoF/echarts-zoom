@@ -1,0 +1,156 @@
+<div class="paichan base-color">
+    <div class="paichan-top">
+        <div class="paichan-top-item">
+            今日排产订单: <span class="number number1">{{paichanData.todayTotal}}</span>
+        </div>
+        <div class="paichan-top-item">
+            订单完成率: <span class="number number1">{{paichanData.finish}}</span>
+        </div>
+        <div class="list">
+            <ng-container *ngFor="let i of paichanData.dingdanStatusList">
+                <div class="list-item">
+                    <div class="number" [ngStyle]="{color: i.color}">{{i.total}}</div>
+                    <div>{{i.name}}</div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+    <div class="paichan-center">
+        <!-- 倒序循环数组前三项 -->
+        <div class="paichan-center-item" *ngFor="let i of paichanDetailDataList.slice(0,3).reverse();let idx1 = index">
+            <div class="paichan-center-item-top">
+                <!-- 倒序输出前一半人员数据 -->
+                <ng-container *ngFor="let j of i.peoplelist.reverse();let idx2 = index">
+                    <div *ngIf="idx2+1 > paichanDetailDataList[0].peoplelist.length/2">
+                        <div class="people-data">
+                            <div>{{j.name}}</div>
+                            <div>{{j.v1}}</div>
+                            <div>{{j.v2}}</div>
+                            <div>{{j.v3}}</div>
+                            <div>{{j.v4}}</div>
+                            <div class="no">{{j.no}}</div>
+                            <div class="img-box">
+                                <img src="./assets/images/people_03.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+            <div class="group">{{i.groupName}}</div>
+            <div class="paichan-center-item-bottom">
+                <!-- 正序输出后一半人员数据 -->
+                <ng-container *ngFor="let j of i.peoplelist.reverse();let idx2 = index">
+                    <div *ngIf="idx2+1 > paichanDetailDataList[0].peoplelist.length/2">
+                        <div class="people-data">
+                            <div class="img-box">
+                                <img src="./assets/images/people_03.png" alt="" />
+                            </div>
+                            <div class="no">{{j.no}}</div>
+                            <div>{{j.name}}</div>
+                            <div>{{j.v1}}</div>
+                            <div>{{j.v2}}</div>
+                            <div>{{j.v3}}</div>
+                            <div>{{j.v4}}</div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+        <!-- 正序循环数组后三项 -->
+        <div class="paichan-center-item" *ngFor="let i of paichanDetailDataList.slice(3,6);let idx1 = index">
+            <div class="paichan-center-item-top">
+                <!-- 倒序输出前一半人员数据 -->
+                <ng-container *ngFor="let j of i.peoplelist.reverse();let idx2 = index">
+                    <div *ngIf="idx2+1 > paichanDetailDataList[0].peoplelist.length/2">
+                        <div class="people-data">
+                            <div>{{j.name}}</div>
+                            <div>{{j.v1}}</div>
+                            <div>{{j.v2}}</div>
+                            <div>{{j.v3}}</div>
+                            <div>{{j.v4}}</div>
+                            <div class="no">{{j.no}}</div>
+                            <div class="img-box">
+                                <img src="./assets/images/people_03.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+            <div class="group">{{i.groupName}}</div>
+            <div class="paichan-center-item-bottom">
+                <!-- 正序输出后一半人员数据 -->
+                <ng-container *ngFor="let j of i.peoplelist.reverse();let idx2 = index">
+                    <div *ngIf="idx2+1 > paichanDetailDataList[0].peoplelist.length/2">
+                        <div class="people-data">
+                            <div class="img-box">
+                                <img src="./assets/images/people_03.png" alt="" />
+                            </div>
+                            <div class="no">{{j.no}}</div>
+                            <div>{{j.name}}</div>
+                            <div>{{j.v1}}</div>
+                            <div>{{j.v2}}</div>
+                            <div>{{j.v3}}</div>
+                            <div>{{j.v4}}</div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+    <div class="paichan-bottom">
+        <div class="paichan-bottom-item">
+            <table class="table table-item" width="300">
+                <caption>工人排名前三名</caption>
+                <tr>
+                    <th>排名</th>
+                    <th>姓名</th>
+                    <th>数量</th>
+                </tr>
+                <tr align="center" *ngFor="let i of peopleDataList">
+                    <td>{{i.no}}</td>
+                    <td>{{i.userName}}</td>
+                    <td>{{i.total}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="paichan-bottom-item">
+            <table class="table table-item" width="500">
+                <caption>返工率前三名</caption>
+                <tr>
+                    <th>工序名称</th>
+                    <th>姓名</th>
+                    <th>返工数量</th>
+                    <th>返工率</th>
+                </tr>
+                <tr align="center" *ngFor="let i of backDataList">
+                    <td>{{i.workName}}</td>
+                    <td>{{i.userName}}</td>
+                    <td>{{i.backTotal}}</td>
+                    <td>{{i.precent}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="paichan-bottom-item">
+            <table class="table table-item" width="500">
+                <caption>在制品积压前三名</caption>
+                <tr>
+                    <th>序号</th>
+                    <th>姓名</th>
+                    <th>积压数量</th>
+                    <th>积压率</th>
+                </tr>
+                <tr align="center" *ngFor="let i of jiyaDataList">
+                    <td>{{i.no}}</td>
+                    <td>{{i.userName}}</td>
+                    <td>{{i.jiyaTotal}}</td>
+                    <td>{{i.precent}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="paichan-bottom-item status">
+            <span>正常</span>
+            <span>质量</span>
+            <span>积压</span>
+        </div>
+    </div>
+</div>

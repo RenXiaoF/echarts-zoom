@@ -1,0 +1,72 @@
+.cangku {
+    .cangku-title {
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+    }
+    .cangku-content {
+        display: flex;
+        justify-content: center;
+    }
+    .table {
+        border-collapse: collapse;
+        &,
+        tr th,
+        tr td {
+            padding: 0;
+            border: 1px solid #fff;
+        }
+        td {
+            position: relative;
+            width: 115px;
+            height: 70px;
+            max-height: 70px;
+            overflow: hidden;
+        }
+    }
+    .table-title {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        font-size: 12px;
+        transform: scale(.5);
+        transform-origin: 0 0 0;
+    }
+}
+
+.fenbu-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 900px;
+    transform: scale(.25);
+    transform-origin: 0 0 0;
+}
+
+.status-table-box {
+    width: 230px;
+    height: 210px;
+}
+
+.caigouliang-analysis,
+.yusuan-analysis {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 400px;
+    height: 300px;
+    transform: scale(.25) translateX(-50%);
+    transform-origin: 0 0 0;
+}
+
+.huocunyujing,
+.huocunjiegou {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 300px;
+    transform: scale(.25);
+    transform-origin: 0 0 0;
+}

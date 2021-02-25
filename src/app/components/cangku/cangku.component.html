@@ -1,0 +1,79 @@
+<div class="cangku base-color">
+    <div class="cangku-title">仓库</div>
+    <div class="cangku-content">
+        <table class="table" width="460" height="210">
+            <tr>
+                <td>
+                    <!-- 人员工积分 -->
+                    <app-gongjifen></app-gongjifen>
+                </td>
+                <td colspan="2" rowspan="2">
+                    <!-- 分布地图 -->
+                    <app-fenbu-map class="fenbu-map"></app-fenbu-map>
+                </td>
+                <td>
+                    <!-- 实际效率 -->
+                    <app-shijixiaolv class="shijixiaolv"></app-shijixiaolv>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- 目标效率 -->
+                    <app-mubiaoxiaolv></app-mubiaoxiaolv>
+                </td>
+                <td>
+                    <!-- 累计出勤 -->
+                    <app-chuqin class="chuqin"></app-chuqin>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- 绩优绩差人员比例 -->
+                    <app-jixiao></app-jixiao>
+                </td>
+                <td colspan="2">
+                    <!-- 全球组织机构人员分布 -->
+                    <app-fenbu-bar class="fenbu-bar"></app-fenbu-bar>
+                </td>
+                <td>
+                    <!-- 累计产量 -->
+                    <app-chanliang class="chanliang"></app-chanliang>
+                </td>
+            </tr>
+        </table>
+        <table class="table" width="115" height="210">
+            <tr>
+                <td>
+                    <app-caigou-analysis class="caigou-analysis"></app-caigou-analysis>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-yusuan-analysis class="yusuan-analysis"></app-yusuan-analysis>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-caigouliang-analysis class="caigouliang-analysis"></app-caigouliang-analysis>
+                </td>
+            </tr>
+        </table>
+        <div class="status-table-box">
+            <app-status-table class="status-table"></app-status-table>
+        </div>
+        <table class="table" width="115" height="210">
+            <tr>
+                <td>
+                    <!-- 存货预警 -->
+                    <app-huocunyujing class="huocunyujing"></app-huocunyujing>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- 货存结构 -->
+                    <app-huocunjiegou class="huocunjiegou"></app-huocunjiegou>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

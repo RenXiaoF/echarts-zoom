@@ -1,0 +1,56 @@
+{
+  "shijianModule": {
+    "dataList1": [20, 55, 40, 134, 111, 42, 30, 22, 66, 11, 22, 47, 15, 38, 15],
+    "dataList2": [30, 77, 80, 60, 54, 34, 100, 33, 77, 22, 22, 58, 40, 30, 78],
+    "dataList3": [40, 20, 77, 44, 7, 444, 200, 80, 20, 66, 77, 24, 99, 44, 66]
+  },
+  "clothesProblemModule": {
+    "dataList": [
+      { "value": 100, "name": "袖子不顺" },
+      { "value": 100, "name": "衣领大小" },
+      { "value": 100, "name": "袖子大小" },
+      { "value": 1120, "name": "其它" }
+    ]
+  },
+  "deciveStatusModule":{
+    "deciveData": {
+      "deciveTotalNum": 500,
+      "lastMonthAddNum": 30,
+      "addPrecent": "70%"
+    },
+    "dataList": [
+      { "value": 335, "name": "同期" },
+      { "value": 1548, "name": "正面" }
+    ]
+  },
+  "jianceModule": {
+    "dataList1": [2.0, 4.9, 7.0, 23.2, 25.6, 76.7],
+    "dataList2": [2.0, 2.2, 3.3, 4.5, 6.3, 10.2]
+  },
+  "pinlvModule": {
+    "gudingPinlv": 300,
+    "dataList": [
+      { "name": "1号", "value": 120 },
+      { "name": "2号", "value": 200},
+      { "name": "3号", "value": 150 },
+      { "name": "4号", "value": 80 },
+      { "name": "5号", "value": 70 }
+    ]
+  },
+  "settingModule": {
+    "onenOffNum": 15,
+    "temp": "23℃",
+    "shidu": "6GHR",
+    "xinhao": "-90dBm",
+    "light": "25OLX"
+  },
+  "repairModule": {
+    "dataList": [
+      { "time": "2018.04.08", "userName": "王伟", "phone": "15036256562", "hotNum": 1000 },
+      { "time": "2018.04.08", "userName": "邓龙平", "phone": "13622410202", "hotNum": 1000 },
+      { "time": "2018.05.08", "userName": "刘杰", "phone": "15075858621", "hotNum": 1000 },
+      { "time": "2018.05.25", "userName": "李志鹏", "phone": "15023333535", "hotNum": 1000 },
+      { "time": "2018.06.15", "userName": "徐玲玲", "phone": "13523378512", "hotNum": 1000 }
+    ]
+  }
+}

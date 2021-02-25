@@ -1,0 +1,37 @@
+.table {
+    font-size: 10px;
+    text-align: center;
+    border-collapse: collapse;
+    &,
+    tr th,
+    tr td {
+        padding: 0;
+        border: 1px solid #050D94;
+    }
+    td {
+        position: relative;
+        height: 23px;
+        max-height: 23px;
+        overflow: hidden;
+    }
+}
+
+.title {
+    color: #000;
+}
+
+.bgc1 {
+    background: #05FFFE;
+}
+
+.bgc2 {
+    background: #40BEEE;
+}
+
+.bgc3 {
+    background: #A569B3;
+}
+
+.bgc4 {
+    background: #F4905E;
+}

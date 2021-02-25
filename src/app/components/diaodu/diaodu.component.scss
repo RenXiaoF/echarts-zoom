@@ -1,0 +1,51 @@
+.diaodu {
+    height: 100%;
+    background: url('../../../assets/images/diaodu_pic.jpg') no-repeat;
+    background-position: 80px 40px;
+    background-size: 80% 80%;
+    .title {
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+    }
+    .diaodu-item {
+        position: relative;
+    }
+    .table {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        font-weight: 600;
+        border-collapse: collapse;
+        transform: scale(.4);
+        transform-origin: 0 0 0;
+        .table-title {
+            padding: 0;
+            span {
+                display: inline-block;
+                text-align: center;
+                &:nth-of-type(1) {
+                    width: 53px;
+                    padding-right: 20px;
+                }
+                &:nth-of-type(2) {
+                    width: 116px;
+                }
+                &:nth-of-type(3) {
+                    width: 96px;
+                }
+                &:nth-of-type(4) {
+                    width: 153px;
+                    padding-left: 20px;
+                }
+            }
+        }
+        &,
+        tr th,
+        tr td {
+            padding: 10px;
+            border: 2px solid #fff;
+        }
+    }
+}

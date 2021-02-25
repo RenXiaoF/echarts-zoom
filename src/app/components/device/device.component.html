@@ -1,0 +1,118 @@
+<div class="box">
+    <div class="shebei">设备</div>
+    <div class="content">
+        <!-- 1 -->
+        <div class="content1">
+            <!-- bar 柱状图 -->
+            <div class="section">
+                <div echarts #optionBar01Echart [options]="optionBar01" style="height: 90%;"> </div>
+                <!-- 图标标注 -->
+                <div class="legend">
+                    <div>
+                        <span class="bgc-pink">紫柱</span>（标准时间）
+                    </div>
+                    <div>
+                        <span class="bgc-grey">灰柱</span>（标准时间）
+                    </div>
+                    <div>
+                        <span class="bgc-orange">橙柱</span>（预估时间）
+                    </div>
+                    <div>
+                        <span class="bgc-blue">蓝线</span>（目标时间）
+                    </div>
+                    <div>
+                        <span class="bgc-red">红线</span>（报警时间）
+                    </div>
+                </div>
+            </div>
+            <!-- pie 饼状图 -->
+            <div class="section">
+                <div echarts #optionPie01Echart [options]="optionPie01" style="height: 90%;"></div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="content2">
+            <!-- pie 饼状图 -->
+            <div class="content2_pie1">
+                <div echarts #optionPie02Echart [options]="optionPie02" style="height: 100%;"></div>
+            </div>
+            <!-- bar 柱状图 -->
+            <div class="content2_pie2">
+                <div echarts #optionBar02Echart [options]="optionBar02" style="width: 100%;height: 130%;"></div>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="content3">
+            <div class="title">
+                <div>
+                    <div class="word">设备数</div>
+                    <div class="number">{{deciveData.deciveTotalNum}}</div>
+                </div>
+                <div>
+                    <div class="word">上月设备增加数</div>
+                    <div class="number">{{deciveData.lastMonthAddNum}}</div>
+                </div>
+                <div>
+                    <div class="word">增加率</div>
+                    <div class="number">{{deciveData.addPrecent}}</div>
+                </div>
+            </div>
+            <div class="fenbu">
+                <div class="title">设备分布</div>
+                <img src="./assets/images/shebeifenbu.png" style="width: 150px;" alt="设备分布">
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="content4">
+            <div class="tubiao">
+                <!-- 进度条 -->
+                <div class="progress">
+                    <div class="title">设备使用频率</div>
+                    <div echarts #pinlvEchart [options]="pinlvOption" style="height: 100%;"></div>
+                </div>
+                <!-- 三位坐标 -->
+                <div class="sanwei">
+                    <div class="title">
+                        <div>
+                            <span>开关次数</span>
+                            <img src="./assets/images/onofftimes.png" style="width: 14px;" alt="开关次数">
+                        </div>
+                        <div>
+                            <span class="color-yellow">{{settingData.onenOffNum}}</span>
+                            <span>次</span>
+                        </div>
+                    </div>
+                    <img style="width: 100%;" src="./assets/images/3wei.png" alt="">
+                    <div class="section">
+                        <div>
+                            <div class="kuang">温度{{settingData.temp}}</div>
+                            <div class="kuang">适度{{settingData.shidu}}</div>
+                        </div>
+                        <div>
+                            <div class="kuang">信号{{settingData.xinhao}}</div>
+                            <div class="kuang">光线{{settingData.light}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- table 表格 -->
+            <div class="t4">
+                <div class="title">设备维护保养</div>
+                <table class="table">
+                    <tr>
+                        <th>维护时间</th>
+                        <th>辅助人</th>
+                        <th>辅助电话</th>
+                        <th>热水量</th>
+                    </tr>
+                    <tr *ngFor="let i of repairDataList">
+                        <td>{{i.time}}</td>
+                        <td>{{i.userName}}</td>
+                        <td>{{i.phone}}</td>
+                        <td>{{i.hotNum + 'md'}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

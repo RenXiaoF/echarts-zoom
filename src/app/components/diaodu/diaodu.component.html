@@ -1,0 +1,25 @@
+<div class="diaodu base-color">
+    <div class="title">AVG调度图</div>
+    <div class="diaodu-item">
+        <table class="table table-item" width="500">
+            <tr>
+                <th colspan="4" class="table-title">
+                    <span>编号</span>
+                    <span>线路</span>
+                    <span>地标</span>
+                    <span>状态</span>
+                </th>
+            </tr>
+            <tr align="center" *ngFor="let i of diaoduDataList">
+                <td>{{i.no}}</td>
+                <td>{{i.line}}</td>
+                <td>{{i.position}}</td>
+                <td [ngSwitch]="i.status">
+                    <label *ngSwitchCase="1">障碍保修</label>
+                    <label *ngSwitchCase="2">离线</label>
+                    <label *ngSwitchCase="3">暂停</label>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

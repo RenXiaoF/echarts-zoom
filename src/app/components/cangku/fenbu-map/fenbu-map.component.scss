@@ -1,0 +1,27 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    &,
+    tr th,
+    tr td {
+        padding: 10px;
+        border: 1px solid #fff;
+    }
+    tr {
+        display: flex;
+        &:nth-of-type(2) td {
+            border: none;
+        }
+    }
+    td {
+        position: relative;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.fenbu-map {
+    padding-top: 50px;
+}

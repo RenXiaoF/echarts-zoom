@@ -1,0 +1,225 @@
+// 最大的容器
+.box {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+// 标题  设备
+.shebei {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: white;
+    text-align: center;
+}
+
+// 第二大容器
+.content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+//  1
+.content1 {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    &>div:nth-of-type(1) {
+        position: relative;
+        width: 60%;
+        .legend {
+            position: absolute;
+            top: 210px;
+            left: 0;
+            display: flex;
+            width: 500px;
+            color: #fff;
+            transform: translateX(23px) scale(.5);
+            transform-origin: 0 0 0;
+            &>div {
+                flex: 1;
+                font-size: 12px;
+                text-align: center;
+                span {
+                    padding: 2px;
+                }
+            }
+        }
+    }
+    &>div:nth-of-type(2) {
+        width: 40%;
+    }
+}
+
+.bgc-pink {
+    background: #A568B5
+}
+
+.bgc-grey {
+    background: #DFDFDF
+}
+
+.bgc-orange {
+    background: #F4905E
+}
+
+.bgc-blue {
+    background: #0184FC
+}
+
+.bgc-red {
+    background: #F90000
+}
+
+//  2
+.content2 {
+    display: flex;
+    flex-direction: column;
+    width: 12%;
+    height: 100%;
+    &>div {
+        flex: 1;
+        height: 115px;
+        max-height: 115px;
+    }
+}
+
+//  3
+.content3 {
+    width: 15%;
+    .title {
+        display: flex;
+        width: 300px;
+        transform: scale(.45);
+        transform-origin: 0 0 0;
+        &>div {
+            flex: 1;
+            text-align: center;
+            .word {
+                color: #fff;
+                font-size: 12px;
+            }
+            .number {
+                color: yellow;
+                font-size: 30px;
+            }
+        }
+    }
+    .fenbu {
+        .title {
+            color: #fff;
+            font-weight: 600;
+            font-size: 24px;
+        }
+    }
+}
+
+//  4
+.content4 {
+    width: 23%;
+    padding: 0 20px;
+    .tubiao {
+        display: flex;
+        &>div {
+            position: relative;
+            width: 50%;
+            height: 115px;
+        }
+        .progress {
+            .title {
+                color: #fff;
+                font-weight: 600;
+                font-size: 12px;
+            }
+            .pinlv {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+        }
+        .sanwei {
+            position: relative;
+            width: 50%;
+            .title {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                color: #fff;
+                font-weight: 600;
+                font-size: 12px;
+                &>div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                img {
+                    margin-left: 6px;
+                }
+            }
+            .section {
+                color: #fff;
+                transform: scale(.6);
+                transform-origin: 0 0 0;
+                &>div {
+                    display: inline-flex;
+                    .kuang {
+                        display: inline-block;
+                        width: 70px;
+                        margin: 4px 4px 0 0;
+                        padding: 8px;
+                        font-size: 12px;
+                        white-space: nowrap;
+                        text-align: center;
+                        border: 1px solid yellow;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.color-white {
+    color: '#fff';
+}
+
+.color-yellow {
+    color: yellow
+}
+
+// table 表格
+.t4 {
+    height: 115px;
+    .title {
+        color: #fff;
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
+
+.table {
+    width: 430px;
+    margin-top: 10px;
+    color: #fff;
+    border-collapse: collapse;
+    transform: scale(.51);
+    transform-origin: 0 0 0;
+    tr th,
+    tr td {
+        width: 25%;
+        padding: 2px 5px;
+        font-size: 12px;
+        text-align: center;
+        border: 1px solid #0fdee4;
+    }
+    tr th {
+        background: #2D5499;
+    }
+}

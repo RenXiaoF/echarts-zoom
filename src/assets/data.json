@@ -1,0 +1,63 @@
+{
+  "state": 1,
+  "msg": "\u83b7\u53d6\u6210\u529f",
+  "result": [
+    {
+      "style_type": 1,
+      "name": "\u6807\u9898\u680f",
+      "id": 110,
+      "kanban_id": 11,
+      "height": 20,
+      "bg_color": "#080808",
+      "color": "#ffffff",
+      "params": [
+        {
+          "model_type": 0,
+          "api_url": "http://59.41.187.99:6790/ross/api/magickanban",
+          "paramet": "{\"action\":\"magic_title:POST\",\"paramet\":\"\"}",
+          "refresh_time": 0
+        }
+      ]
+    },
+    {
+      "style_type": 2,
+      "name": "\u4e00\u5217\u4e00\u6a21\u5757",
+      "id": 111,
+      "kanban_id": 11,
+      "height": 50,
+      "bg_color": "#000000",
+      "color": "#ffffff",
+      "params": [
+        {
+          "model_type": 1,
+          "api_url": "http://59.41.187.99:6790/ross/api/magickanban",
+          "paramet": "{\"action\":\"magic_list:POST\",\"paramet\":\"\"}",
+          "refresh_time": 0
+        }
+      ]
+    },
+    {
+      "style_type": 3,
+      "name": "\u4e00\u5217\u4e8c\u6a21\u5757",
+      "id": 112,
+      "kanban_id": 11,
+      "height": 30,
+      "bg_color": "#000000",
+      "color": "#ffffff",
+      "params": [
+        {
+          "model_type": 2,
+          "api_url": "http://59.41.187.99:6790/ross/api/magickanban",
+          "paramet": "{\"action\":\"magic_histogram:POST\",\"paramet\":\"\"}",
+          "refresh_time": 0
+        },
+        {
+          "model_type": 3,
+          "api_url": "http://59.41.187.99:6790/ross/api/magickanban",
+          "paramet": "{\"action\":\"magic_pie:POST\",\"paramet\":\"\"}",
+          "refresh_time": 0
+        }
+      ]
+    }
+  ]
+}

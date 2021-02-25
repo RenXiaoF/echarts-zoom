@@ -1,0 +1,70 @@
+<table class="table" width="230" height="210">
+    <tr class="bgc1 title">
+        <td colspan="4">{{yuancailiaoData && yuancailiaoData.title}}</td>
+    </tr>
+    <tr class="bgc2">
+        <td>待采购</td>
+        <td>采购中</td>
+        <td>仓库库存</td>
+        <td>仓库发货</td>
+    </tr>
+    <tr class="bgc2">
+        <ng-container *ngIf="yuancailiaoData && yuancailiaoData.yuancailiaoList.length>0 else noYuancailiao">
+            <td *ngFor="let i of yuancailiaoData.yuancailiaoList">{{i}}</td>
+        </ng-container>
+        <ng-template #noYuancailiao>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </ng-template>
+    </tr>
+    <tr class="bgc2">
+        <ng-container *ngIf="yuancailiaoData && yuancailiaoData.kuanshuList.length>0 else noYuancailiao">
+            <td *ngFor="let i of yuancailiaoData.kuanshuList">{{i}}</td>
+        </ng-container>
+        <ng-template #noYuancailiao>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </ng-template>
+    </tr>
+    <tr class="bgc1 title">
+        <td colspan="4">在制品状态表</td>
+    </tr>
+    <tr class="bgc2">
+        <td colspan="2">
+            <ng-container *ngIf="zhipinData && zhipinData.zhipinList.length>0">
+                {{zhipinData.zhipinList[0].name + zhipinData.zhipinList[0].total}}件
+            </ng-container>
+        </td>
+        <td colspan="2">
+            <ng-container *ngIf="zhipinData && zhipinData.zhipinList.length>0">
+                {{zhipinData.zhipinList[0].name + zhipinData.zhipinList[2].total}}件
+            </ng-container>
+        </td>
+    </tr>
+    <tr class="bgc2">
+        <td colspan="2">
+            <ng-container *ngIf="zhipinData && zhipinData.zhipinList.length>0">
+                {{zhipinData.zhipinList[0].name + zhipinData.zhipinList[1].total}}件
+            </ng-container>
+        </td>
+        <td colspan="2">
+            <ng-container *ngIf="zhipinData && zhipinData.zhipinList.length>0">
+                {{zhipinData.zhipinList[0].name + zhipinData.zhipinList[3].total}}件
+            </ng-container>
+        </td>
+    </tr>
+    <tr>
+        <td class="bgc3"></td>
+        <td colspan="3" class="bgc4"></td>
+    </tr>
+    <tr>
+        <td class="bgc3"></td>
+        <td class="bgc4"></td>
+        <td class="bgc4"></td>
+        <td class="bgc4"></td>
+    </tr>
+</table>

@@ -1,0 +1,23 @@
+<table class="table">
+    <tr>
+        <td *ngFor="let i of fenbuMapTableData">
+            <span>{{i.total}}</span>
+            <span>{{i.precent}}</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span>员工总数(人)</span>
+            <span>同比</span>
+        </td>
+        <td>
+            <span>奋进者(人)</span>
+            <span>同比</span>
+        </td>
+        <td>
+            <span>斗志大咖(人)</span>
+            <span>同比</span>
+        </td>
+    </tr>
+</table>
+<div class="fenbu-map" echarts #fenbuMapEchart [options]="option"></div>

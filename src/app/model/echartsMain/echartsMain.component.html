@@ -1,0 +1,46 @@
+<div #wrap class="wrap">
+    <!-- 顶部 -->
+    <div class="wrap-top">
+        <div class="wrap-top-left">
+            <app-cangku></app-cangku>
+        </div>
+        <div class="wrap-top-right">
+            <app-device></app-device>
+        </div>
+    </div>
+    <!-- 中间 -->
+    <div class="wrap-center">
+        <div class="wrap-center-left">
+            <div>
+                <video style="width: 100%; height: 100%;" class="myvideo" controls="controls" autoplay="autoplay">
+                    <source src="./assets/video/video1.mp4" type='video/mp4' />
+                </video>
+            </div>
+            <div class="paichan-section">
+                <app-paichan #paichan></app-paichan>
+            </div>
+        </div>
+        <div class="wrap-center-center">
+            <app-globalstatus></app-globalstatus>
+        </div>
+        <div class="wrap-center-right">
+            <div class="video-box">
+                <video style="width: 100%; height: 100%;" class="myvideo" controls="controls" autoplay="autoplay">
+                    <source src="./assets/video/video2.mp4" type='video/mp4' />
+                </video>
+            </div>
+            <div class="diaodu-section">
+                <app-diaodu #diaodu></app-diaodu>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="wrap-bottom">
+        <div class="wrap-bottom-left">
+            <app-caiwu></app-caiwu>
+        </div>
+        <div class="wrap-bottom-right">
+            <app-dingdan></app-dingdan>
+        </div>
+    </div>
+</div>

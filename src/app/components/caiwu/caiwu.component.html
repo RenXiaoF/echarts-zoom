@@ -1,0 +1,43 @@
+<div class="caiwu-container base-color">
+    <h3 class="title">{{caiwuData.title}}</h3>
+    <div class="caiwu-content">
+        <ul class="top">
+            <li *ngFor="let topItem of caiwuData.topData">
+                <div class="top-left"><span>{{topItem.text}}</span></div>
+                <div class="top-right">
+                    <p class="digital">{{topItem.right.digital}}</p>
+                    <p class="rate" [ngClass]="topItem.right.isCreace?'green_text':'red_text'">
+                        <img *ngIf="topItem.right.isCreace" src="./assets/images/increace_arrow.png" alt="净增长" />
+                        <img *ngIf="!topItem.right.isCreace" src="./assets/images/reduce_arrow.png" alt="净增长" /> {{topItem.right.growth}}%
+                    </p>
+                </div>
+                <div class="top-bg"><img src="./assets/images/022.jpg" alt="背景图" /></div>
+            </li>
+        </ul>
+        <ul class="center">
+            <li *ngFor="let centerItem of caiwuData.centerData">
+                {{centerItem}}
+            </li>
+        </ul>
+        <ul class="bottom">
+            <li>
+                <div echarts #bar1Echart [options]="option1" style="width: 100%;height: 100%;"></div>
+            </li>
+            <li>
+                <div echarts #bar2Echart [options]="option2" style="width: 100%;height: 100%;"></div>
+            </li>
+            <li>
+                <div echarts #bar3Echart [options]="option3" style="width: 100%;height: 100%;"></div>
+            </li>
+            <li>
+                <div echarts #line1Echart [options]="option4" style="width: 100%;height: 100%;"></div>
+            </li>
+            <li>
+                <div echarts #line2Echart [options]="option5" style="width: 100%;height: 100%;"></div>
+            </li>
+            <li>
+                <div echarts #line3Echart [options]="option6" style="width: 100%;height: 100%;"></div>
+            </li>
+        </ul>
+    </div>
+</div>
